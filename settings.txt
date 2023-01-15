@@ -1,0 +1,18 @@
+{"site_url":"http://localhost:5000",
+"site_title": "Дмитрий Сафронов: Python разработчик и автор контента",
+"description": "Дмитрий Сафронов - портфолио, резюме и блог Python разработчика",
+"keywords": "Веб-разработка на Python, бэкенд на Django и Flask",
+"name": "Дмитрий Сафронов",
+"tag1":"Разработчик и автор",
+"tag2":"курсов по Django",
+"sect1":"Главная",
+"sect2":"Резюме",
+"sect3":"Портфолио",
+"sect4":"Блог",
+"sect5":"Контакты",
+"telegram":"https://t.me/ee_pok",
+"facebook":"ttps://facebook.com/",
+"vk":"https://vk.com/eee__pok",
+"e_mail":"mailto:safronov.snowmaster@yandex.ru",
+"city":"Брянск"
+}

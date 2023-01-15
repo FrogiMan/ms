@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="vh-100 d-flex justify-content-center align-items-center">
+ <div class="container">
+        <div class="row d-flex justify-content-center">
+
+<form action="/login" method="POST">
+  <h1>Админ</h1>
+    <p>
+	    <label for="username">Имя пользователя</label>
+	    <input type="text" name="username">
+	</p>
+	<p>
+	    <label for="password">Праоль</label>
+	    <input type="password" name="password">
+	</p>
+	<p>
+	    <input type="submit">
+	</p>
+    </form>
+        </div>
+</div>
+  </div>
+</form>
+{% endblock %}

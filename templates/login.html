@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<hr>
+<h2>Список сообщений</h2>
+
+
+<ul class="list-posts">
+{% for p in posts %}
+<li>
+<div class="col-md-3 mt-4 mt-md-0 d-flex align-items-stretch">
+<p class="col-md-3 form-group"><a>{{p.id}}</a></p>
+<p class="col-md-3 form-group">{{ p.name[:50]}}</p>
+<p class="col-md-9 form-group">{{ p.email[:50]}}</p>
+    <p class="col-md-6 form-group">{{ p.post[:50]}}</p>
+
+    <a  href="{{ delPost }}" class="col-md-5 form-group"><button type="submit">Удалить данные</button></a>
+                        </div>
+   <p class="annonce">{{ p.message[:50]}}</p>
+</li>
+{% endfor %}
+</ul>
+
+    </div>
+{% endblock %}

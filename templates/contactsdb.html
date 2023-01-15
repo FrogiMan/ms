@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.error-template {padding-top: 150px; text-align: center;}
+.error-actions {margin-top:15px; margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+</style>
+
+{% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash {{ cat }}"> {{msg}}</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>Сообщение отправлено</h1>
+                <h2>Теперь вы спокойно можете вернуться на главную</h2>
+                <div class="error-actions">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg">Вернуться на главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
